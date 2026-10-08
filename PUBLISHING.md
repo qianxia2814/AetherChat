@@ -45,6 +45,6 @@ https://raw.githubusercontent.com/你的GitHub账号/AetherChat/main/repo.json
 
 ## 当前状态
 
-本机 0.1.1 已通过 29 项测试，用户已验证说话频道与副本外跨服小队。发布脚本已准备；GitHub 仓库、账号连接、正式 Release 和线上索引尚未创建，不能把占位地址当成可用库地址。
+本机 0.1.1 已通过 29 项测试，用户已验证说话频道与副本外跨服小队。正式仓库为 [qianxia2814/AetherChat](https://github.com/qianxia2814/AetherChat)，安装方式见 README。通过第三方库在游戏内完成安装仍需另行验收；源码许可证尚未选定。
 
 格式依据：[Dalamud 官方第三方库说明](https://dalamud.dev/plugin-publishing/custom-repositories/)。库地址和安装包必须支持匿名读取，因此采用公开仓库与公开 Release。

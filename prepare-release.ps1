@@ -25,6 +25,7 @@ $stage = Join-Path $output 'package'
 New-Item -ItemType Directory -Path $stage -Force | Out-Null
 $files = @('AetherChat.dll', 'AetherChat.Core.dll', 'AetherChat.deps.json', 'AetherChat.json', 'README.md')
 foreach ($name in $files) { Copy-Item -LiteralPath (Join-Path $built $name) -Destination (Join-Path $stage $name) -Force }
+Copy-Item -LiteralPath (Join-Path $projectRoot 'README.md') -Destination (Join-Path $stage 'README.md') -Force
 $repositoryUrl = "https://github.com/$Repository"
 $manifest.RepoUrl = $repositoryUrl
 $manifest | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $stage 'AetherChat.json') -Encoding utf8NoBOM
@@ -47,7 +48,7 @@ $repoJsonUrl = "https://raw.githubusercontent.com/$Repository/main/repo.json"
 
 国服 Dalamud API 15。支持本机 OpenAI 兼容接口、GPT、DeepSeek、Claude；按频道和关键词触发，由当前角色发言。
 
-本版修复副本外跨服小队被误判为无队伍。用户已实测说话和跨服小队发言正常；29 项自动测试通过。
+支持悄悄话、说话、小队（含跨服）、团队（联盟）和部队；各频道可独立开关。关键词留空时回复已开启频道中的他人消息。提供四组模型连接配置、人设提示词、上下文设置、冷却与限流、预览和命令开关。
 
 ## 通过第三方插件库安装
 
