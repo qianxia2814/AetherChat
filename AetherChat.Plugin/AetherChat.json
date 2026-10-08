@@ -1,0 +1,12 @@
+{
+  "Author": "浅夏",
+  "Name": "AetherChat · 灵语",
+  "InternalName": "AetherChat",
+  "AssemblyVersion": "0.1.1.0",
+  "Description": "接收所选频道他人消息，通过本机或 API 生成回复，由当前角色在原频道发言。支持 GPT、DeepSeek、Claude、关键词和频道独立设置。",
+  "Punchline": "把 AI 接入艾欧泽亚聊天",
+  "ApplicableVersion": "any",
+  "DalamudApiLevel": 15,
+  "LoadPriority": 0,
+  "Tags": ["chat", "AI", "中文"]
+}

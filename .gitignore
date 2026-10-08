@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+.vs/
+*.user
+.build-home/
+dist/
+*.log
+.env
+.env.*
+!.env.example
+*.local.json
+pluginConfigs/
